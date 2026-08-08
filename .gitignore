@@ -1,0 +1,23 @@
+# Environment variables & secrets
+.env
+*.env
+.env.*
+backend/.env
+
+# Python
+__pycache__/
+*.pyc
+backend/venv/
+venv/
+*.egg-info/
+
+# Node & Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# System files
+.DS_Store
+*.log
