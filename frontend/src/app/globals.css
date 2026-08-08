@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-color: #ffffff;
+  --card-bg: #f8f9fc;
+  --font-apple: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Inter', 'Helvetica Neue', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: #ffffff;
+  color: #09090b;
+  font-family: var(--font-apple);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  letter-spacing: -0.01em;
+}
+
+/* Pure White Light Theme Neumorphism */
+
+.neu-card {
+  background: #f7f8fa;
+  box-shadow:  8px 8px 20px #e0e3eb,
+              -8px -8px 20px #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.neu-card-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.neu-card-hover:hover {
+  box-shadow:  12px 12px 26px #d5d9e3,
+              -12px -12px 26px #ffffff;
+  transform: translateY(-1.5px);
+}
+
+.neu-input {
+  background: #edf0f5;
+  box-shadow: inset 3px 3px 7px #d1d5df,
+              inset -3px -3px 7px #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: #09090b;
+  font-family: var(--font-apple);
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.neu-input:focus {
+  outline: none;
+  box-shadow: inset 4px 4px 8px #c8cbd5,
+              inset -4px -4px 8px #ffffff,
+              0 0 0 2px rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.neu-btn {
+  background: linear-gradient(145deg, #ffffff, #f0f2f7);
+  box-shadow:  5px 5px 12px #d4d7e0,
+              -5px -5px 12px #ffffff;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: #09090b;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.neu-btn:hover {
+  background: linear-gradient(145deg, #ffffff, #e6e9f0);
+  box-shadow:  7px 7px 16px #cbcee0,
+              -7px -7px 16px #ffffff;
+  color: #000000;
+}
+
+.neu-btn:active, .neu-btn-active {
+  background: #e4e7ee;
+  box-shadow: inset 4px 4px 8px #c5c8d2,
+              inset -4px -4px 8px #ffffff !important;
+  color: #000000 !important;
+  border-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Pure Black Primary Button */
+.neu-btn-primary {
+  background: #000000;
+  color: #ffffff;
+  box-shadow:  5px 5px 14px #d4d7e0,
+              -5px -5px 14px #ffffff,
+              0 4px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: 600;
+  border: 1px solid #000000;
+  transition: all 0.2s ease;
+}
+
+.neu-btn-primary:hover {
+  background: #18181b;
+  color: #ffffff;
+  box-shadow:  7px 7px 18px #c8cbd5,
+              -7px -7px 18px #ffffff,
+              0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+.glow-gradient-text {
+  background: linear-gradient(135deg, #09090b 0%, #27272a 60%, #52525b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
